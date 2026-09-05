@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NovaCloud - Intelligent Cloud & Edge Developer Platform. Deploy modern web applications and AI workloads globally.">
+  <title>NovaCloud | Intelligent Cloud & Edge Platform</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body id="top">
+
+  <!-- Top Banner -->
+  <div class="announcement-bar" id="announcement">
+    <div class="announcement-content">
+      <span class="announcement-badge">Update</span>
+      <span class="announcement-text">NovaCloud 2.0 is now live with enhanced edge performance & real-time monitoring</span>
+      <a href="index.html" class="announcement-link" id="portfolio-return-link">
+        <i class="fa-solid fa-arrow-left"></i> View Portfolio
+      </a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar" id="site-nav">
+    <div class="nav-container">
+      <a href="#top" class="nav-brand" aria-label="NovaCloud Home">
+        <div class="brand-symbol">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+        <span class="brand-name">Nova<span>Cloud</span></span>
+      </a>
+
+      <!-- Mobile Hamburger Toggle -->
+      <input type="checkbox" id="mobile-toggle" class="mobile-toggle-input" aria-label="Toggle navigation menu">
+      <label for="mobile-toggle" class="mobile-hamburger-btn" aria-label="Open menu">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </label>
+
+      <!-- Nav Links -->
+      <nav class="nav-links-wrap" id="nav-drawer">
+        <a href="#features" class="nav-item">Features</a>
+        <a href="#architecture" class="nav-item">Architecture</a>
+        <a href="#workflow" class="nav-item">How It Works</a>
+        <a href="#testimonials" class="nav-item">Reviews</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <div class="nav-actions">
+          <a href="index.html" class="btn btn-ghost btn-sm" id="nav-portfolio-btn">
+            <i class="fa-solid fa-user"></i> My Portfolio
+          </a>
+          <a href="#cta" class="btn btn-primary btn-sm" id="nav-get-started-btn">
+            Get Started Free <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="glow-orb orb-primary"></div>
+    <div class="glow-orb orb-secondary"></div>
+    <div class="glow-orb orb-cyan"></div>
+    <div class="cyber-grid-overlay"></div>
+
+    <div class="hero-container">
+      <div class="hero-tag-wrapper">
+        <a href="#features" class="hero-release-pill">
+          <span class="pill-sparkle">🚀</span>
+          <span class="pill-title">Nova Engine v2.0 Released</span>
+          <span class="pill-divider">•</span>
+          <span class="pill-action">Explore Features <i class="fa-solid fa-chevron-right"></i></span>
+        </a>
+      </div>
+
+      <h1 class="hero-headline">
+        Deploy Intelligent Cloud & Edge Applications at the
+        <span class="gradient-headline">Speed of Light</span>
+      </h1>
+
+      <p class="hero-description">
+        NovaCloud is an open, modern developer platform built to run distributed workloads, edge functions, and streaming applications with sub-millisecond latency worldwide.
+      </p>
+
+      <div class="hero-btn-group">
+        <a href="#cta" class="btn btn-primary btn-lg" id="hero-start-cta">
+          <i class="fa-solid fa-rocket"></i> Get Started Free
+        </a>
+        <a href="#architecture" class="btn btn-glass btn-lg" id="hero-demo-cta">
+          <i class="fa-solid fa-diagram-project"></i> View Architecture
+        </a>
+      </div>
+
+      <!-- Tech Stack / Integrations -->
+      <div class="hero-social-proof">
+        <span class="proof-lead">Compatible with modern developer ecosystems</span>
+        <div class="client-logos-strip">
+          <span class="logo-chip"><i class="fa-brands fa-github"></i> GitHub</span>
+          <span class="logo-chip"><i class="fa-brands fa-docker"></i> Docker</span>
+          <span class="logo-chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+          <span class="logo-chip"><i class="fa-brands fa-python"></i> Python</span>
+          <span class="logo-chip"><i class="fa-brands fa-linux"></i> Linux</span>
+        </div>
+      </div>
+
+      <!-- Dashboard Mockup -->
+      <div class="hero-mockup-wrapper">
+        <div class="mockup-glass-frame">
+          <div class="mockup-window-header">
+            <div class="window-controls">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="mockup-address-bar">
+              <i class="fa-solid fa-lock"></i>
+              <span>https://console.novacloud.io/cluster/overview</span>
+            </div>
+            <div class="window-status">
+              <span class="status-indicator"></span> System Operational
+            </div>
+          </div>
+          <div class="mockup-image-container">
+            <img src="assets/images/landing-preview.jpg" alt="NovaCloud Dashboard" class="mockup-img" id="hero-dashboard-img">
+            
+            <div class="floating-badge badge-top-right">
+              <div class="float-icon green"><i class="fa-solid fa-bolt"></i></div>
+              <div class="float-text">
+                <span class="float-num">18ms</span>
+                <span class="float-desc">Global Response Time</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="float-icon blue"><i class="fa-solid fa-shield-halved"></i></div>
+              <div class="float-text">
+                <span class="float-num">100% Free</span>
+                <span class="float-desc">Open Developer Access</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Bar -->
+  <section class="metrics-section" id="metrics">
+    <div class="section-container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">99.99%</div>
+          <div class="metric-title">Reliability & Uptime</div>
+          <p class="metric-subtitle">Multi-region distributed nodes</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">&lt; 20ms</div>
+          <div class="metric-title">Edge Response Time</div>
+          <p class="metric-subtitle">Global DNS & anycast routing</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100%</div>
+          <div class="metric-title">Pure HTML5 & CSS3</div>
+          <p class="metric-subtitle">Zero external JS dependencies</p>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Open</div>
+          <div class="metric-title">Free for Everyone</div>
+          <p class="metric-subtitle">No credit card or setup fee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="section-container">
+      <div class="section-head text-center">
+        <span class="pill-chip"><i class="fa-solid fa-layer-group"></i> Core Features</span>
+        <h2 class="section-heading">Built for <span class="gradient-text">Modern Developers</span></h2>
+        <p class="section-subtext">A streamlined toolset designed to simplify application deployment, optimize network speed, and maintain continuous uptime.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Feature 1 (Wide) -->
+        <article class="bento-card bento-wide" id="bento-edge-compute">
+          <div class="bento-content">
+            <span class="bento-tag"><i class="fa-solid fa-microchip"></i> Edge Performance</span>
+            <h3 class="bento-title">Fast Edge Serverless Compute</h3>
+            <p class="bento-desc">
+              Execute code close to your users without the hassle of managing servers. Lightweight runtime environments spin up in milliseconds across global locations.
+            </p>
+            <ul class="bento-features-list">
+              <li><i class="fa-solid fa-check"></i> Instant Cold Starts under 25ms</li>
+              <li><i class="fa-solid fa-check"></i> Real-Time WebSocket & API Routing</li>
+              <li><i class="fa-solid fa-check"></i> Automatic Caching & Global Sync</li>
+            </ul>
+          </div>
+          <div class="bento-visual">
+            <img src="assets/images/ai-feature.jpg" alt="Edge Architecture Diagram" class="bento-img">
+          </div>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="bento-card" id="bento-security">
+          <div class="bento-icon-box icon-purple">
+            <i class="fa-solid fa-shield-virus"></i>
+          </div>
+          <h3 class="bento-title">Built-In Security</h3>
+          <p class="bento-desc">
+            Automated SSL certificate provisioning, request encryption, and DDoS defense at the edge layer.
+          </p>
+          <div class="bento-metric-chip">
+            <span>🛡️ Automatic SSL & TLS 1.3</span>
+          </div>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="bento-card" id="bento-observability">
+          <div class="bento-icon-box icon-cyan">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="bento-title">Live Analytics</h3>
+          <p class="bento-desc">
+            Monitor real-time request logs, CPU usage, response latencies, and traffic graphs in a clean dashboard.
+          </p>
+          <div class="bento-metric-chip">
+            <span>📊 Real-Time Logs</span>
+          </div>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="bento-card" id="bento-instant-deploy">
+          <div class="bento-icon-box icon-emerald">
+            <i class="fa-solid fa-code-branch"></i>
+          </div>
+          <h3 class="bento-title">Git-Based Workflow</h3>
+          <p class="bento-desc">
+            Push code to your repository to trigger automated builds and generate instant preview URLs for every commit.
+          </p>
+          <div class="bento-metric-chip">
+            <span>⚡ Automated Builds</span>
+          </div>
+        </article>
+
+        <!-- Feature 5 -->
+        <article class="bento-card" id="bento-database">
+          <div class="bento-icon-box icon-orange">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3 class="bento-title">Distributed Storage</h3>
+          <p class="bento-desc">
+            Fast key-value cache and asset distribution across multiple regions for static and dynamic assets.
+          </p>
+          <div class="bento-metric-chip">
+            <span>🌐 Global Edge Caching</span>
+          </div>
+        </article>
+
+        <!-- Feature 6 (Wide) -->
+        <article class="bento-card bento-wide bento-dev-experience" id="bento-dx">
+          <div class="bento-content">
+            <span class="bento-tag"><i class="fa-solid fa-terminal"></i> Developer Experience</span>
+            <h3 class="bento-title">Command-Line CLI & Easy Configuration</h3>
+            <p class="bento-desc">
+              Initialize projects, test locally, and deploy to production with simple and intuitive commands.
+            </p>
+            <div class="code-terminal-snippet">
+              <div class="snippet-header">
+                <span>terminal ~ nova-cli</span>
+                <i class="fa-solid fa-terminal"></i>
+              </div>
+              <code>
+                <span class="term-prompt">$</span> <span class="term-cmd">nova init</span> my-app<br>
+                <span class="term-dim">✓ Configured build environment and routes</span><br>
+                <span class="term-prompt">$</span> <span class="term-cmd">nova deploy</span><br>
+                <span class="term-success">✨ Deployed to https://my-app.novacloud.io (1.8s)</span>
+              </code>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Architecture Tabs (Pure CSS) -->
+  <section class="architecture-section" id="architecture">
+    <div class="section-container">
+      <div class="section-head text-center">
+        <span class="pill-chip"><i class="fa-solid fa-code"></i> Live Preview</span>
+        <h2 class="section-heading">Developer <span class="gradient-text">Architecture</span></h2>
+        <p class="section-subtext">Click the tabs below to preview code snippets and sample configs in pure CSS.</p>
+      </div>
+
+      <div class="css-tabs-wrapper">
+        <input type="radio" name="arch-tab" id="tab-deploy" class="tab-radio" checked>
+        <input type="radio" name="arch-tab" id="tab-ai" class="tab-radio">
+        <input type="radio" name="arch-tab" id="tab-security" class="tab-radio">
+        <input type="radio" name="arch-tab" id="tab-monitor" class="tab-radio">
+
+        <div class="tab-nav-bar">
+          <label for="tab-deploy" class="tab-nav-btn" id="btn-tab-deploy">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Edge Function</span>
+          </label>
+          <label for="tab-ai" class="tab-nav-btn" id="btn-tab-ai">
+            <i class="fa-solid fa-brain"></i>
+            <span>AI Stream Handler</span>
+          </label>
+          <label for="tab-security" class="tab-nav-btn" id="btn-tab-security">
+            <i class="fa-solid fa-shield-halved"></i>
+            <span>Security Config</span>
+          </label>
+          <label for="tab-monitor" class="tab-nav-btn" id="btn-tab-monitor">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Live Logs</span>
+          </label>
+        </div>
+
+        <div class="tab-content-panels">
+          <!-- Panel 1 -->
+          <div class="tab-panel panel-deploy">
+            <div class="panel-grid">
+              <div class="panel-text">
+                <span class="panel-badge">SERVERLESS</span>
+                <h3 class="panel-title">Simple & Lightweight Functions</h3>
+                <p class="panel-body">
+                  Write standard JavaScript or TypeScript functions that execute instantly at edge PoPs with automatic scaling.
+                </p>
+                <div class="panel-checklist">
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Standard Request & Response APIs</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Zero server maintenance required</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Fast distributed key-value storage</div>
+                </div>
+              </div>
+              <div class="panel-code-box">
+                <div class="code-box-header">
+                  <span class="file-tag"><i class="fa-brands fa-js"></i> serverless-function.js</span>
+                  <span class="copy-pill">JavaScript</span>
+                </div>
+                <pre class="code-pre"><code><span class="c-kw">export default</span> {
+  <span class="c-kw">async</span> fetch(request, env) {
+    <span class="c-kw">const</span> url = <span class="c-kw">new</span> URL(request.url);
+    <span class="c-kw">const</span> data = {
+      message: <span class="c-str">"Hello from NovaCloud Edge!"</span>,
+      path: url.pathname,
+      timestamp: Date.now()
+    };
+    <span class="c-kw">return new</span> Response(JSON.stringify(data), {
+      headers: { <span class="c-str">"content-type"</span>: <span class="c-str">"application/json"</span> }
+    });
+  }
+};</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 2 -->
+          <div class="tab-panel panel-ai">
+            <div class="panel-grid">
+              <div class="panel-text">
+                <span class="panel-badge">AI PIPELINES</span>
+                <h3 class="panel-title">Streaming Responses</h3>
+                <p class="panel-body">
+                  Handle streaming text and conversational endpoints with minimal latency and high concurrency.
+                </p>
+                <div class="panel-checklist">
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Server-Sent Events (SSE) support</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Connect to open-source or custom models</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Real-time chunked streaming</div>
+                </div>
+              </div>
+              <div class="panel-code-box">
+                <div class="code-box-header">
+                  <span class="file-tag"><i class="fa-brands fa-python"></i> ai_stream.py</span>
+                  <span class="copy-pill">Python</span>
+                </div>
+                <pre class="code-pre"><code><span class="c-kw">from</span> nova_edge <span class="c-kw">import</span> StreamResponse
+
+<span class="c-kw">async def</span> handler(request):
+    prompt = <span class="c-kw">await</span> request.json()
+    
+    <span class="c-kw">async def</span> event_generator():
+        <span class="c-kw">async for</span> token <span class="c-kw">in</span> model_stream(prompt[<span class="c-str">"text"</span>]):
+            <span class="c-kw">yield</span> f<span class="c-str">"data: {token}\n\n"</span>
+
+    <span class="c-kw">return</span> StreamResponse(event_generator())</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 3 -->
+          <div class="tab-panel panel-security">
+            <div class="panel-grid">
+              <div class="panel-text">
+                <span class="panel-badge">SECURITY</span>
+                <h3 class="panel-title">Declarative Security Rules</h3>
+                <p class="panel-body">
+                  Configure origin security headers, rate limits, and allowed HTTP methods with clean JSON configs.
+                </p>
+                <div class="panel-checklist">
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Automatic CORS and security headers</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Built-in IP rate limiter</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Encrypted environment secrets</div>
+                </div>
+              </div>
+              <div class="panel-code-box">
+                <div class="code-box-header">
+                  <span class="file-tag"><i class="fa-solid fa-shield"></i> security.config.json</span>
+                  <span class="copy-pill">Config</span>
+                </div>
+                <pre class="code-pre"><code>{
+  <span class="c-kw">"ssl"</span>: <span class="c-kw">true</span>,
+  <span class="c-kw">"cors"</span>: {
+    <span class="c-kw">"allowedOrigins"</span>: [<span class="c-str">"*"</span>],
+    <span class="c-kw">"allowedMethods"</span>: [<span class="c-str">"GET"</span>, <span class="c-str">"POST"</span>]
+  },
+  <span class="c-kw">"rateLimiting"</span>: {
+    <span class="c-kw">"maxRequestsPerMin"</span>: <span class="c-num">5000</span>
+  }
+}</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Panel 4 -->
+          <div class="tab-panel panel-monitor">
+            <div class="panel-grid">
+              <div class="panel-text">
+                <span class="panel-badge">OBSERVABILITY</span>
+                <h3 class="panel-title">Real-Time Event Feed</h3>
+                <p class="panel-body">
+                  Watch live invocation counts, status codes, and execution durations directly in the terminal or web console.
+                </p>
+                <div class="panel-checklist">
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Clean color-coded status outputs</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Millisecond execution timing</div>
+                  <div class="check-item"><i class="fa-solid fa-circle-check"></i> Filter by region or route</div>
+                </div>
+              </div>
+              <div class="panel-code-box">
+                <div class="code-box-header">
+                  <span class="file-tag"><i class="fa-solid fa-chart-column"></i> live-stream.log</span>
+                  <span class="copy-pill">Logs</span>
+                </div>
+                <pre class="code-pre"><code>[2026-09-05 19:30:00] <span class="c-str">[GET /api/v1/feed]</span> <span class="c-kw">200 OK</span> (14.2ms)
+[2026-09-05 19:30:01] <span class="c-str">[GET /assets/main.css]</span> <span class="c-kw">200 OK</span> (3.1ms)
+[2026-09-05 19:30:02] <span class="c-str">[POST /api/v1/auth]</span> <span class="c-kw">200 OK</span> (18.5ms)
+<span class="c-comment">All edge nodes running normally.</span></code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works (3 Steps) -->
+  <section class="process-section" id="workflow">
+    <div class="section-container">
+      <div class="section-head text-center">
+        <span class="pill-chip"><i class="fa-solid fa-sliders"></i> Quick Start</span>
+        <h2 class="section-heading">How It <span class="gradient-text">Works</span></h2>
+        <p class="section-subtext">Go from code on your local machine to live deployment in 3 simple steps.</p>
+      </div>
+
+      <div class="process-steps-grid">
+        <div class="step-card" id="step-1">
+          <div class="step-number-wrap">
+            <span class="step-num">01</span>
+            <div class="step-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          </div>
+          <h3 class="step-title">Connect Code</h3>
+          <p class="step-desc">
+            Link your project folder or Git repository. The platform automatically detects HTML, CSS, JavaScript, and project assets.
+          </p>
+          <div class="step-badge-row">
+            <span class="tag-sm">Git Link</span>
+            <span class="tag-sm">Auto Setup</span>
+          </div>
+        </div>
+
+        <div class="step-card" id="step-2">
+          <div class="step-number-wrap">
+            <span class="step-num">02</span>
+            <div class="step-icon"><i class="fa-solid fa-gear"></i></div>
+          </div>
+          <h3 class="step-title">Configure Routes</h3>
+          <p class="step-desc">
+            Set custom domains, define serverless API endpoints, and customize environment variables as needed.
+          </p>
+          <div class="step-badge-row">
+            <span class="tag-sm">Custom Domains</span>
+            <span class="tag-sm">Environment</span>
+          </div>
+        </div>
+
+        <div class="step-card" id="step-3">
+          <div class="step-number-wrap">
+            <span class="step-num">03</span>
+            <div class="step-icon"><i class="fa-solid fa-globe"></i></div>
+          </div>
+          <h3 class="step-title">Deploy & Share</h3>
+          <p class="step-desc">
+            Publish your project globally with automated SSL, lightning-fast CDN caching, and full responsive support.
+          </p>
+          <div class="step-badge-row">
+            <span class="tag-sm">Live in Seconds</span>
+            <span class="tag-sm">Free Hosting</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="section-container">
+      <div class="section-head text-center">
+        <span class="pill-chip"><i class="fa-solid fa-heart"></i> Feedback</span>
+        <h2 class="section-heading">What Developers <span class="gradient-text">Say</span></h2>
+        <p class="section-subtext">Hear from learners, developers, and designers using the platform.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card" id="test-card-1">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "The performance is fast and the clean UI layout makes managing edge deployments straightforward and fun."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">
+              <span>ER</span>
+            </div>
+            <div class="reviewer-info">
+              <strong class="reviewer-name">Elena Rostova</strong>
+              <span class="reviewer-role">Frontend Engineer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="test-card-2">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Building and viewing pages on this setup is super clean. The CSS-based interactions work seamlessly on every device."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">
+              <span>MV</span>
+            </div>
+            <div class="reviewer-info">
+              <strong class="reviewer-name">Marcus Vance</strong>
+              <span class="reviewer-role">Full-Stack Developer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="test-card-3">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Extremely responsive layout and lightweight structure. Pure HTML and CSS keeps the page super fast."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">
+              <span>SK</span>
+            </div>
+            <div class="reviewer-info">
+              <strong class="reviewer-name">Sophia Kim</strong>
+              <span class="reviewer-role">UI/UX Designer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (Pure CSS Accordion) -->
+  <section class="faq-section" id="faq">
+    <div class="section-container">
+      <div class="section-head text-center">
+        <span class="pill-chip"><i class="fa-regular fa-circle-question"></i> FAQ</span>
+        <h2 class="section-heading">Frequently Asked <span class="gradient-text">Questions</span></h2>
+        <p class="section-subtext">Common questions about the project, architecture, and technology used.</p>
+      </div>
+
+      <div class="faq-accordion-list">
+        <details class="faq-item" open>
+          <summary class="faq-summary">
+            <span>How is this landing page built?</span>
+            <i class="fa-solid fa-plus faq-toggle-icon"></i>
+          </summary>
+          <div class="faq-body">
+            <p>This entire landing page is created using 100% semantic HTML5 and modern CSS3 (Flexbox, CSS Grid, custom CSS properties, and pseudo-classes like <code>:checked</code> for tabs). No JavaScript libraries are needed.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>Is this page fully responsive on mobile devices?</span>
+            <i class="fa-solid fa-plus faq-toggle-icon"></i>
+          </summary>
+          <div class="faq-body">
+            <p>Yes, the layout uses fluid CSS media queries to adapt cleanly to all screen sizes, from mobile smartphones to large desktop screens, including a pure CSS hamburger menu.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>How do the interactive architecture tabs work without JavaScript?</span>
+            <i class="fa-solid fa-plus faq-toggle-icon"></i>
+          </summary>
+          <div class="faq-body">
+            <p>The tabs use hidden radio buttons paired with <code>&lt;label&gt;</code> elements and the CSS <code>:checked</code> pseudo-class to show and hide corresponding code panels smoothly.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">
+            <span>How do I get back to the main developer portfolio?</span>
+            <i class="fa-solid fa-plus faq-toggle-icon"></i>
+          </summary>
+          <div class="faq-body">
+            <p>You can click the "View Portfolio" link in the top bar or header navigation, or the links in the footer, which link directly to <code>index.html</code>.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="section-container">
+      <div class="cta-card-box">
+        <div class="cta-ambient-glow"></div>
+        <div class="cta-content">
+          <span class="cta-badge">⚡ Free & Open Access</span>
+          <h2 class="cta-headline">Ready to Explore NovaCloud?</h2>
+          <p class="cta-sub">
+            Join developers exploring fast, lightweight cloud and edge architectures. 100% free and open for everyone.
+          </p>
+
+          <form class="cta-signup-form" action="index.html#contact" method="GET">
+            <div class="form-input-wrap">
+              <i class="fa-regular fa-envelope input-icon"></i>
+              <input type="email" class="cta-email-input" placeholder="Enter your email..." required aria-label="Email address for signup">
+            </div>
+            <button type="submit" class="btn btn-primary cta-submit-btn" id="cta-submit">
+              Get Started Free <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+
+          <div class="cta-guarantees">
+            <span><i class="fa-solid fa-circle-check"></i> 100% Free Forever</span>
+            <span><i class="fa-solid fa-circle-check"></i> No Credit Card Required</span>
+            <span><i class="fa-solid fa-circle-check"></i> Instant Access</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section" id="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-about">
+          <a href="#top" class="nav-brand">
+            <div class="brand-symbol">
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
+            <span class="brand-name">Nova<span>Cloud</span></span>
+          </a>
+          <p class="footer-bio">
+            A modern, responsive cloud & edge platform showcase built with semantic HTML5 and CSS3.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://github.com/anuragchaurasia143" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Platform</h4>
+          <ul class="footer-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#architecture">Architecture</a></li>
+            <li><a href="#workflow">How It Works</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Resources</h4>
+          <ul class="footer-links">
+            <li><a href="#architecture">Code Examples</a></li>
+            <li><a href="index.html#projects">Featured Projects</a></li>
+            <li><a href="index.html#skills">Technical Skills</a></li>
+            <li><a href="index.html#about">About Me</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Developer</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><strong>Anurag Chaurasia</strong></a></li>
+            <li><a href="index.html#resume">Resume</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://github.com/anuragchaurasia143" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-legal">
+          <p>&copy; 2026 <strong>NovaCloud</strong>. Designed & coded by <a href="index.html" class="author-highlight">Anurag Chaurasia</a>.</p>
+        </div>
+        <a href="#top" class="back-to-top" id="landing-back-to-top" aria-label="Scroll back to top">
+          Back to Top <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
