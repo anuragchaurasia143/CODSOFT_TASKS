@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive Web Calculator built with HTML5, CSS Grid, and JavaScript. Perform standard arithmetic with full keyboard and history support.">
+  <title>Smart Calculator</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧮</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="calc-header">
+    <div class="calc-nav-container">
+      <div class="calc-brand">
+        <div class="brand-icon-box">
+          <i class="fa-solid fa-calculator"></i>
+        </div>
+        <h1 class="brand-title">Smart<span>Calculator</span></h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Calculator Workspace -->
+  <main class="calc-main-wrapper">
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <div class="calc-layout-container">
+      
+      <!-- Calculator App Card -->
+      <section class="calculator-card" aria-label="Interactive Calculator">
+        
+        <!-- Calculator Top Bar -->
+        <div class="calc-card-header">
+          <div class="header-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="calc-mode-label">Standard</span>
+          <button type="button" class="btn-history-toggle" id="history-toggle-btn" title="Toggle Calculation History" aria-label="Toggle history panel">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </button>
+        </div>
+
+        <!-- Display Screen -->
+        <div class="calc-screen" id="calc-screen">
+          <div class="calc-history-expression" id="calc-expression" aria-live="polite"></div>
+          <div class="calc-current-value" id="calc-display" aria-live="polite">0</div>
+        </div>
+
+        <!-- Keypad (CSS Grid) -->
+        <div class="calc-keypad" id="calc-keypad">
+          <!-- Row 1 -->
+          <button type="button" class="calc-btn btn-action" data-action="all-clear" title="All Clear (Escape)" id="btn-ac">AC</button>
+          <button type="button" class="calc-btn btn-action" data-action="clear-entry" title="Clear Entry" id="btn-ce">CE</button>
+          <button type="button" class="calc-btn btn-action" data-action="backspace" title="Backspace (Backspace)" id="btn-backspace">
+            <i class="fa-solid fa-delete-left"></i>
+          </button>
+          <button type="button" class="calc-btn btn-operator" data-action="divide" data-symbol="÷" title="Divide (/)" id="btn-divide">÷</button>
+
+          <!-- Row 2 -->
+          <button type="button" class="calc-btn btn-number" data-number="7" id="btn-7">7</button>
+          <button type="button" class="calc-btn btn-number" data-number="8" id="btn-8">8</button>
+          <button type="button" class="calc-btn btn-number" data-number="9" id="btn-9">9</button>
+          <button type="button" class="calc-btn btn-operator" data-action="multiply" data-symbol="×" title="Multiply (*)" id="btn-multiply">×</button>
+
+          <!-- Row 3 -->
+          <button type="button" class="calc-btn btn-number" data-number="4" id="btn-4">4</button>
+          <button type="button" class="calc-btn btn-number" data-number="5" id="btn-5">5</button>
+          <button type="button" class="calc-btn btn-number" data-number="6" id="btn-6">6</button>
+          <button type="button" class="calc-btn btn-operator" data-action="subtract" data-symbol="-" title="Subtract (-)" id="btn-subtract">−</button>
+
+          <!-- Row 4 -->
+          <button type="button" class="calc-btn btn-number" data-number="1" id="btn-1">1</button>
+          <button type="button" class="calc-btn btn-number" data-number="2" id="btn-2">2</button>
+          <button type="button" class="calc-btn btn-number" data-number="3" id="btn-3">3</button>
+          <button type="button" class="calc-btn btn-operator" data-action="add" data-symbol="+" title="Add (+)" id="btn-add">+</button>
+
+          <!-- Row 5 -->
+          <button type="button" class="calc-btn btn-function" data-action="negate" title="Negate (±)" id="btn-negate">±</button>
+          <button type="button" class="calc-btn btn-number" data-number="0" id="btn-0">0</button>
+          <button type="button" class="calc-btn btn-number" data-action="decimal" id="btn-decimal">.</button>
+          <button type="button" class="calc-btn btn-equals" data-action="calculate" title="Calculate (Enter)" id="btn-equals">=</button>
+        </div>
+      </section>
+
+      <!-- Calculation History & Info Panel -->
+      <aside class="calc-side-panel" id="calc-side-panel">
+        
+        <!-- History Box -->
+        <div class="side-card history-card">
+          <div class="side-card-header">
+            <h3><i class="fa-solid fa-clock-rotate-left"></i> History</h3>
+            <button type="button" class="btn-clear-history" id="clear-history-btn" title="Clear History">
+              <i class="fa-regular fa-trash-can"></i> Clear
+            </button>
+          </div>
+          <div class="history-list" id="history-list">
+            <div class="history-empty" id="history-empty">
+              <i class="fa-solid fa-inbox"></i>
+              <span>No calculations yet</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Keyboard Shortcuts Reference -->
+        <div class="side-card shortcuts-card">
+          <div class="side-card-header">
+            <h3><i class="fa-solid fa-keyboard"></i> Shortcuts</h3>
+          </div>
+          <ul class="shortcuts-list">
+            <li><kbd>0</kbd> - <kbd>9</kbd> <span>Numbers</span></li>
+            <li><kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd> <span>Operators</span></li>
+            <li><kbd>Enter</kbd> / <kbd>=</kbd> <span>Calculate</span></li>
+            <li><kbd>Backspace</kbd> <span>Delete</span></li>
+            <li><kbd>Esc</kbd> <span>Clear All</span></li>
+            <li><kbd>.</kbd> <span>Decimal</span></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
